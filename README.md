@@ -2,15 +2,13 @@
 
 ## 📖 Overview
 
-This project performs analysis on astronomical FITS (Flexible Image Transport System) images using [mention your tools, e.g., Python, Astropy, NumPy, etc.]. It is designed to [briefly explain the main goal – e.g., extract features, generate plots, detect objects, etc.].
+This project performs analysis on astronomical FITS (Flexible Image Transport System) images using python, Astropy, Matplotlib, Photutils. It is designed to extract the data from the .fits file, plot the image, histogram and star detection.
 
 ## 🛠 Features
 
-- Load and parse FITS files
-- Image preprocessing (e.g., normalization, cropping, noise filtering)
-- Analysis functions (e.g., photometry, object detection, histogram analysis)
-- Visualization (matplotlib-based display of FITS images and results)
-- CLI or GUI support (if applicable)
+- Load and analysis the data of the file
+- Analysis functions: photometry, star detection, histogram analysis
+- Visualization: matplotlib-based display of FITS images 
 
 ## 🚀 Getting Started
 
