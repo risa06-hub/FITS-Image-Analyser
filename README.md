@@ -51,4 +51,33 @@ The project follows a step-by-step pipeline to analyze FITS images:
     - background information was analysed using sigma clipping and a threshold of 5*std was set to detect stars in the image
     - the data was subtracted from the median to obtain a source file
 
-   
+## 🔭 Sample FITS Files for Testing
+
+To try this project, you can download sample `.fits` files using Python:
+
+```python
+from astropy.utils.data import download_file
+from astropy.io import fits
+
+url = "http://data.astropy.org/tutorials/FITS-images/HorseHead.fits"
+file_path = download_file(url, cache=True)
+hdul = fits.open(file_path)
+hdul.info()
+```
+### More resources for FITS file 
+- **Astropy Sample Data**  
+  [http://data.astropy.org/tutorials/FITS-images/](http://data.astropy.org/tutorials/FITS-images/)  
+  Hosted by the Astropy team, includes files used in official tutorials.
+
+- **NASA SkyView Virtual Observatory**  
+  [https://skyview.gsfc.nasa.gov/](https://skyview.gsfc.nasa.gov/)  
+  Allows generation of custom FITS images from multiple surveys.
+
+- **Sloan Digital Sky Survey (SDSS)**  
+  [https://skyserver.sdss.org](https://skyserver.sdss.org)  
+  Provides FITS images and spectra of millions of celestial objects.
+
+- **Hubble Legacy Archive (HLA)**  
+  [https://hla.stsci.edu/](https://hla.stsci.edu/)  
+  Repository of processed images from the Hubble Space Telescope.
+
