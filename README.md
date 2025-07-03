@@ -20,10 +20,35 @@ Make sure you have the following installed:
 - `astropy`
 - `matplotlib`
 - `numpy`
-- 'photutils'
+- `photutils`
 
 
 Install dependencies with:
 
 ```bash
 pip install -r requirements.txt
+```
+
+## 🔧 How It Works
+
+The project follows a step-by-step pipeline to analyze FITS images:
+
+1. **Load FITS File**  
+   The user can provide a FITS image, a sample FITS file has been included in the code. The program uses `astropy.io.fits` to read the file and extract image data.
+
+3. **Preprocess Image**  
+   - extract background information of the image like mean, median,std.
+  
+4. **Plotting**
+    - Normalising
+    - choose a prefered cmap
+    - plot the image using matplotlib
+5. **Histogram**
+    - historgram analysis: frequency vs pixles
+    - used .ravel() to convert 2D array into 1D array to plot the histogram 
+
+4. **Star Detection**  
+    - background information was analysed using sigma clipping and a threshold of 5*std was set to detect stars in the image
+    - the data was subtracted from the median to obtain a source file
+
+   
