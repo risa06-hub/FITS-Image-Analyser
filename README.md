@@ -20,7 +20,8 @@ Make sure you have the following installed:
 - `astropy`
 - `matplotlib`
 - `numpy`
-- Any other relevant libraries
+- 'photutils'
+
 
 Install dependencies with:
 
